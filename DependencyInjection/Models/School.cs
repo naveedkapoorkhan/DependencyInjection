@@ -8,5 +8,9 @@ namespace DependencyInjection.Models
 {
     public class School
     {
+        internal void Teach(Person person) 
+        {
+            Console.WriteLine("educate person");
+        }
     }
 }

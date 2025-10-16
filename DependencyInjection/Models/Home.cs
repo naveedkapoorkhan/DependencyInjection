@@ -8,6 +8,12 @@ namespace DependencyInjection.Models
 {
     public class Home
     {
+        internal  void ProvideShelter(Person person)
+        {
+            Console.WriteLine("Stay Home");
+
+        }
+        
     }
 }
 
