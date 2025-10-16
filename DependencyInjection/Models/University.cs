@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DependencyInjection.Models
 {
-    public class School : IEducationalInstitutions
+    public class University : IEducationalInstitutions
     {
         public void Teach(Person person)
         {
-            Console.WriteLine("educate person in School");
+            Console.WriteLine("Educate person in University");
         }
     }
 }

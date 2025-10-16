@@ -11,12 +11,17 @@ namespace DependencyInjection
           //  person.GetTreatment();
            
             person.TakeRefuge();
-            person.School=new School();//property injection
+            person.School=new University();//property injection
+           
             person.Study();
 
              Hospital hospital = new Hospital();//this way
             person.GetTreatment(hospital);//this waay
             person.GetTreatment(new Hospital());//second way
+            person.School = new School();//property injection
+
+            person.Study();
+
         }
     }
 }

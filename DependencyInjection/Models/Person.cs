@@ -9,11 +9,13 @@ namespace DependencyInjection.Models
     public class Person
     {
         private Home _home;
-        private School _school;
-       // private Hospital _hospital;//now do not need because method injection
+
+        //  private School _school;//so i want to make the school also change to college university etc so use interface 
+        private IEducationalInstitutions _school;
+        // private Hospital _hospital;//now do not need because method injection
 
         //property injection
-        public School School
+        public IEducationalInstitutions School
         {
             set { _school = value; }
         }
